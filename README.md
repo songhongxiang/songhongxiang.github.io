@@ -17,7 +17,7 @@ devtools::install_github("pzhaonet/mindr")
 ## 2. 项目参与
 #### Step1：git工作空间
 #### Step2：编辑`how_to_eat_robotics.md`并提交更新
-#### Step3：使用[**mindr**](https://github.com/pzhaonet/mindr)将`eatRobotics.md`转换为`index.html`
+#### Step3：使用[**mindr**](https://github.com/pzhaonet/mindr)将`how_to_eat_robotics.md`转换为`index.html`
 ---
 
 转换教程如下：
