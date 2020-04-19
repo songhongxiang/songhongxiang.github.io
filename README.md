@@ -25,11 +25,11 @@ devtools::install_github("pzhaonet/mindr")
 library('mindr')    #导入mindr库
 getwd()             #获取当前工作目录
 setwd("G:/桌面")    #设置[G:\桌面]为工作目录，此处为示例，具体目录请改为git项目目录
-input<-c("test.md") #读入Markdown文档
+input<-c("how_to_eat_robotics.md") #读入Markdown文档
 print(input)        #打印文档目录，查看是否读入成功，如果为空字符串则失败
 mm(from=input,type="file",root="mindr") #将md文件转为网页脑图
 ```
-打开生成的`index.html`，通过网址栏确定文件生成目录，以便更新云端`index.html`
+打开生成的`index.html`，通过网址栏确定文件生成目录，将目录下的`/lib`和`index.html`更新到云端即可。
 
 ---
 #### Step4：使用生成的`index.html`内容更新云端库中的`index.html`，该文件即为网页版脑图描述文件！
