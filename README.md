@@ -1,6 +1,7 @@
 # How to eat Robotics in 3 minutes ? 🔥🔥
 &ensp;&ensp;&ensp;&ensp;机器人学知识体系庞大，3分钟当然是不能掌握的，本项目旨在建立一个完整的指导机器人学学习框架，让你3分钟掌握学习机器人学入门目标以及体系所涵盖的研究方向，让入门的你不在迷茫！
 
+思维导图地址：[https://songhongxiang.github.io](https://songhongxiang.github.io)
 # 使用教程
 ## 1. 安装R语言和mindr功能包
 #### Install R Language
