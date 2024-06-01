@@ -1,44 +1,14 @@
-# How to eat Robotics in 3 minutes ? 🔥🔥
-&ensp;&ensp;&ensp;&ensp;机器人学知识体系庞大，3分钟当然是不能掌握的，本项目旨在建立一个完整的指导机器人学学习框架，让你3分钟掌握学习机器人学入门目标以及体系所涵盖的研究方向，让入门的你不在迷茫！
+# 3D Rotation Converter
+A simple HTML+JavaScript page to convert between different 3D rotation formats, quaternions, Rodrigues angles, Euler angles, etc.
 
-思维导图地址：[https://songhongxiang.github.io](https://songhongxiang.github.io)
-# 使用教程
-## 1. 安装R语言和mindr功能包
-#### Install R Language
-&ensp;&ensp;&ensp;&ensp;R语言安装省略
-#### Install mindr package
-> [mindr](https://github.com/pzhaonet/mindr)由[pzhaonet](https://github.com/pzhaonet)开发，首先要感谢大佬提供的mindr包，让我们轻松将（.md，.Rmd）转换为思维导图！
+__Run http://www.andre-gaschler.com/rotationconverter/ directly to convert rotations online__
 
-```R
-# stable version:
-install.packages("mindr")
-# or development version:
-devtools::install_github("pzhaonet/mindr")
-```
-## 2. 项目参与
-#### Step1：git工作空间
-#### Step2：编辑`how_to_eat_robotics.md`并提交更新
-#### Step3：使用[**mindr**](https://github.com/pzhaonet/mindr)将`how_to_eat_robotics.md`转换为`index.html`
----
+## Dependencies
+Most of the conversion is calculated with the [three.js library](https://github.com/mrdoob/three.js) (which is also MIT-licensed).
 
-转换教程如下：
-```R
-library('mindr')    #导入mindr库
-getwd()             #获取当前工作目录
-setwd("G:/桌面")    #设置[G:\桌面]为工作目录，此处为示例，具体目录请改为git项目目录
-input<-c("how_to_eat_robotics.md") #读入Markdown文档
-print(input)        #打印文档目录，查看是否读入成功，如果为空字符串则失败
-mm(from=input,type="file",root="mindr") #将md文件转为网页脑图
-```
-打开生成的`index.html`，通过网址栏确定文件生成目录，将目录下的`/lib`和`index.html`更新到云端即可。
+## License
+Permissive MIT license, see file LICENSE
 
----
-#### Step4：使用生成的`index.html`内容更新云端库中的`index.html`，该文件即为网页版脑图描述文件！
-#### Step5：访问`songhongxiang.github.io`测试更新是否成功！
-
-
-> 坦白讲，没想到有一天我会开始写R！正如古月所讲：怕什么真理无穷,进一寸有一寸的欢喜！
-> 学习机器人，不仅要有理论的学习，更要重在实践，也这是我的成长秘籍！大家一起加油，撑起我们的机器人事业！
-
-&ensp;&ensp;[**读万卷书，
-也要行万里路！**](https://blog.csdn.net/weixin_43455581)
+## Build
+To generate the minified math part of three.js, call
+`python three.js-master/utils/build/build.py --include math --minify --output three-onlymath.min.js`
